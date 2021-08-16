@@ -8,13 +8,14 @@
 
 === user 관리 부분 ===
 
-/users/edit -> Edit user
-/users/delete -> Delete user
+/users/:id -> See user
+/users/logout -> Log out
+/users/edit -> Edit my profile
+/users/delete -> Delete my profile
 
 === 영상 관리부분 ===
 
-/videos/watch -> Watch Video
-/videos/edit -> Edit Video
-/videos/dlete -> Delete Video
-/videos/comments -> Comment on a video
-/videos/comments/delete -> Delete A Comment of a Video
+/videos/:id -> See Video
+/videos/:id/edit -> Edit Video
+/videos/:/id/delete -> Delete Video
+/videos/upload -> Upload video

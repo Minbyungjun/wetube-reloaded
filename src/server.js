@@ -12,8 +12,9 @@ const PORT = 4000;
 const app = express();
 //만들어진 middleWare morgan
 const logger = morgan("dev");
-app.use(logger); 
 
+app.set("view engine", "pug");
+app.use(logger); 
 app.use("/", globalRouter);
 app.use("/users", userRouter);
 app.use("/videos", videoRouter);
